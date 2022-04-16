@@ -1,14 +1,16 @@
 .app__navbar {
   width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   padding: 1rem 2rem;
   background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4x);
-  -webkit-backdrop-filter: blur(4x);
-  border: 1px solid rgba(266, 255, 255, 0.18);
+  // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   z-index: 2;
 }
@@ -40,6 +42,7 @@
   li {
     margin: 0 1rem;
     cursor: pointer;
+
     flex-direction: column;
 
     div {
@@ -55,6 +58,7 @@
       color: var(--gray-color);
       text-decoration: none;
       flex-direction: column;
+
       text-transform: uppercase;
       font-weight: 500;
 
@@ -86,7 +90,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--secondary-color);
+  background-color: var(--secondary-color);
 
   svg {
     width: 70%;
@@ -116,13 +120,13 @@
     background-size: cover;
     background-repeat: repeat;
 
-    box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+    /* top box shadow */
+    box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
 
     svg {
       width: 35px;
       height: 35px;
       color: var(--secondary-color);
-
       margin: 0.5rem 1rem;
     }
 
@@ -156,10 +160,12 @@
         }
       }
     }
+
     @media screen and (min-width: 900px) {
       display: none;
     }
   }
+
   @media screen and (min-width: 900px) {
     display: none;
   }
